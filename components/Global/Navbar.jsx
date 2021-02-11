@@ -19,35 +19,15 @@ const NavbarCP = () => {
             <Navbar.Collapse id="basic-navbar-nav">
 
                 <Nav className="ml-auto text-white">
-                    <Nav.Link href="#home" className="text-white">
-                        <p>
-                            Furniture
-                        </p>
-                    </Nav.Link>
-                    <Nav.Link href="#link" className="text-white">
-                        <p>
-                            Lighting
-                        </p>
-                    </Nav.Link>
-                    <Nav.Link href="#link"className="text-white" >
-                        <p>
-                            Decor
-                        </p>
-                    </Nav.Link>
-                    <Nav.Link href="#link" className="text-white" >
-                        <p>
-                            Tableware
-                        </p>
-                    </Nav.Link>
+                    <Nav.Link href="#home" className="text-white">Furniture</Nav.Link>
+                    <Nav.Link href="#link" className="text-white">Lighting</Nav.Link>
+                    <Nav.Link href="#link"className="text-white" >Decor</Nav.Link>
+                    <Nav.Link href="#link" className="text-white" >Tableware</Nav.Link>
                     <br/>
-                    <Nav.Link href="/" className="ml-auto text-white"><i className="fas fa-home"></i> Home</Nav.Link>
-                </Nav>
-                <Nav>
-                    <p>
-                        <Nav.Link href={'/cart'} className="ml-auto text-white">
-                            <i className="fas fa-shopping-cart"></i>
-                        </Nav.Link>
-                    </p>
+                    <Nav.Link href="/" className="ml-auto text-white">{/*<i className="fas fa-home"></i>*/} Home</Nav.Link>
+                    <Nav.Link href={'/cart'} className="ml-auto text-white">
+                        <i className="fas fa-shopping-cart"/>
+                    </Nav.Link>
                 </Nav>
                 <Form inline hidden={showSearch}>
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
@@ -55,9 +35,7 @@ const NavbarCP = () => {
                 <Nav>
                     <a className="ml-auto" onClick={() => setShowSearch(!showSearch)}>
                         <Nav.Link className="text-white">
-                            <p>
-                                <i className="fas fa-search"></i>
-                            </p>
+                        <i className="fas fa-search"></i>
                         </Nav.Link>
                     </a>
                 </Nav>
