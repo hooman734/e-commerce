@@ -1,37 +1,31 @@
 import Head from 'next/head'
-import Link from "next/link";
 import styles from '../styles/Home.module.css'
-import {Button, Col, Container, Row} from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import ImageTilesCP from "../components/HomePage/ImageTiles";
-import FirstViewCP from "../components/HomePage/FirstView";
+import TopViewCP from "../components/HomePage/TopView";
+import SecondViewCP from "../components/HomePage/BottomView";
+import * as React from "react";
+import BottomViewCP from "../components/HomePage/BottomView";
+import FootNoteCP from "../components/Global/FootNote";
+import PromoCardsCP from "../components/HomePage/PromoCards";
 
 export default function Home() {
 
       return (
-        <Container className={styles.container}>
-          <Head>
-            <title>Create Next App</title>
-            <link rel="icon" href="/favicon.ico" />
+          <>
+              <Head>
+                  <title>Create Next App</title>
+                  <link rel="icon" href="/favicon.ico" />
+              </Head>
 
-          </Head>
+              <TopViewCP/>
 
-          <main className={styles.main}>
-              <FirstViewCP></FirstViewCP>
+              <BottomViewCP/>
 
+              <PromoCardsCP/>
 
-          </main>
-
-          <footer className={styles.footer}>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Powered by{' '}
-              <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-            </a>
-          </footer>
-        </Container>
-      )
+              <footer>
+                <FootNoteCP/>
+              </footer>
+          </>
+      );
 }

@@ -1,4 +1,8 @@
 import Head from 'next/head'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import PromoCardsCP from "../../components/HomePage/PromoCards";
+import DropDownListCP from "../../components/Products/DropDownList";
+import FootNoteCP from "../../components/Global/FootNote";
 
 export default function Home () {
     return (
@@ -7,7 +11,14 @@ export default function Home () {
                 <title>Products</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <h1>Hello from products</h1>
+
+            <DropDownListCP/>
+
+            <PromoCardsCP/>
+            <div className="my-5 py-5"></div>
+            <footer className="mb-n5">
+                <FootNoteCP/>
+            </footer>
         </>
     );
 }

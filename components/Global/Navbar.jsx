@@ -9,7 +9,6 @@ import '@fortawesome/fontawesome-free/js/brands';
 import {useState} from "react";
 
 
-
 const NavbarCP = () => {
     const [showSearch, setShowSearch] = useState(true);
 
@@ -45,6 +44,6 @@ const NavbarCP = () => {
             </Navbar.Collapse>
         </Navbar>
     )
-}
+};
 
 export default NavbarCP
