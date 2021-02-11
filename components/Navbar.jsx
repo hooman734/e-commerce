@@ -16,7 +16,7 @@ const NavbarCP = () => {
     return (
         <Navbar className="bg-dark" expand="lg">
             <Navbar.Brand href="#home"><h2><span className="text-danger">Your</span> <span className="text-white">Interior</span></h2></Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle className="bg-light" aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
 
                 <Nav className="ml-auto text-white">

@@ -1,8 +1,10 @@
 import Head from 'next/head'
-import Image from "next/image";
+import Link from "next/link";
 import styles from '../styles/Home.module.css'
 import {Button, Col, Container, Row} from "react-bootstrap";
-import ImageTilesCP from "../components/ImageTiles";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ImageTilesCP from "../components/HomePage/ImageTiles";
+import FirstViewCP from "../components/HomePage/FirstView";
 
 export default function Home() {
 
@@ -11,40 +13,12 @@ export default function Home() {
           <Head>
             <title>Create Next App</title>
             <link rel="icon" href="/favicon.ico" />
-              <style tsx>
-                  {`
-                  body {
-                    background: lightblue url("/home-decoration.jpeg") no-repeat fixed center;
-                  }
-                `}
-              </style>
+
           </Head>
 
           <main className={styles.main}>
-              <Container>
-                  <Row className="justify-content-md-center">
-                      <Col className="my-auto">
-                          <h1 className="text-danger message fa-4x " >Create Your Comfort Zone.</h1>
-                      </Col>
-                  </Row>
-              </Container>
-              <Button className="btn btn-dark btn-s btn-lg pr-10 my-lg-auto">
-                  Shop Now
-              </Button>
-              <div className="my-auto">
-                  <style jsx>
-                      {`
-                              {
-                                margin-top: auto;
-                                padding: 200px;
-                                width: {window.innerImage};
-                                background: lightblue url("/home-background.jpeg") no-repeat fixed center;
-                                                                                                                      
-                              }
-                            `}
-                  </style>
-                  <ImageTilesCP></ImageTilesCP>
-              </div>
+              <FirstViewCP></FirstViewCP>
+
 
           </main>
 
