@@ -30,7 +30,7 @@ const PromoCardCP = props => {
                         <Row className="justify-content-center">
                             <Col className="col-2">{''}</Col>
                             <Col className="col-auto">
-                                <Button className="px-auto" variant="danger">Add to <i className="fas fa-shopping-cart"></i></Button>
+                                <Button className="px-auto" variant="danger">{''}<i className="fas fa-shopping-cart"/> Add </Button>
                             </Col>
                             <Col className="col-2">{''}</Col>
                         </Row>

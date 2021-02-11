@@ -5,7 +5,7 @@ const PromoCardsCP = () => {
     return (
         <>
             <Container className="mb-4">
-                <Row className="no-gutters">
+                <Row className="mx-sm-n5">
                     <Col className="mx-n3">
                         <PromoCardCP file={'sofa1.jpeg'} price={'999'} caption={'Sofa Francesca Model One'}/>
                     </Col>
