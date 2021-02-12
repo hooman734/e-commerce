@@ -8,8 +8,11 @@ export default function Home () {
     return (
         <>
             <Head>
+                <html lang="en"/>
                 <title>Products</title>
                 <link rel="icon" href="/favicon.ico" />
+                <meta charSet="UTF-8"/>
+                <meta httpEquiv="X-UA-Compatible"/>
             </Head>
 
             <DropDownListCP/>
