@@ -22,5 +22,5 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 [comment]: <> (The [Heroku]&#40;&#41; link is here [Vercel Platform]&#40;&#41;)
 
 
-The [Vercel](https://e-commerce-gray.vercel.app/) link is here [Vercel Platform]() 
+The [Vercel](https://vercel.com/) link is here [Vercel Platform](https://e-commerce-gray.vercel.app/) 
 
